@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "94571086-3dfc-4c44-90b6-fb0577698672",
+		"name": "springModTaller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19595195"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "getCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postCliente",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"nombre\": \"dferdasdsdsdsds\",\r\n        \"cuenta\": \"111111111111\",\r\n        \"rut\": \"1123456789\",\r\n        \"direccion\": \"123123\",\r\n        \"telefono\": \"123123123\",\r\n        \"email\": \"123123123\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "agentExtintor",
+			"item": [
+				{
+					"name": "getagentExtintor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agentextintor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agentextintor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postAgentextintor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Quimico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agentextintor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agentextintor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "capacidadExtintor",
+			"item": [
+				{
+					"name": "getCapacidadExtintor",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "postCapacidadExtintor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/capaextintor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"capaextintor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trabajos",
+			"item": [
+				{
+					"name": "gettrabajos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/trabajos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trabajos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postrabajos",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"letraIndext\":\"D\",\r\n    \"descripcion\":\"BOCA DE INCENDI2222O\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/trabajos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"trabajos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "certificadores",
+			"item": [
+				{
+					"name": "postCertificadores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"FVBG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/certificadores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"certificadores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCertificadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/certificadores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"certificadores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetalleOrdenService",
+			"item": [
+				{
+					"name": "getDetalleOrdenService",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/detalleorderservice",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"detalleorderservice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postDetalleOrdenService",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"ordenesServicio\": {\r\n            \"cliente\": {\r\n                \"idCliente\": \"1\"\r\n            },\r\n            \"idDetalleServicio\": \"2\"\r\n        },\r\n        \"capacidadextintor\": {\r\n            \"idCapacidad\": \"1\"\r\n        },\r\n        \"agentextintor\": {\r\n            \"idAgente\": \"1\"\r\n        },\r\n        \"certificadores\": {\r\n            \"idCertificador\": \"1\"\r\n        },\r\n        \"trabajos\": [\r\n            {\r\n               \"idtrabajo\" : \"1\"\r\n            },\r\n            {\r\n               \"idtrabajo\" : \"1\"\r\n            }\r\n\r\n        ],\r\n        \"nroCertifi\": \"PORDBCONLIPE2\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/detalleorderservice",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"detalleorderservice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getdetalleOrdenObejtoFULL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"ordenesServicio\": {\r\n            \"cliente\": {\r\n                \"idCliente\": \"2\"\r\n            },\r\n            \"nroRden\": \"223223\",\r\n            \"fechaIngress\": \"25/07/22\",\r\n            \"fechaEgress\": \"29/07/22\",\r\n            \"idDetalleServicio\": \"1\"\r\n        },\r\n        \"capacidadextintor\": {\r\n            \"idCapacidad\": \"1\"\r\n        },\r\n        \"agentextintor\": {\r\n            \"idAgente\": \"1\"\r\n        },\r\n        \"certificadores\": {\r\n            \"idCertificador\": \"1\"\r\n        },\r\n        \"trabajos\": [\r\n            {\r\n                \"idtrabajo\": \"1\"\r\n            },\r\n            {\r\n                \"idtrabajo\": \"1\"\r\n            }\r\n        ],\r\n        \"nroCertifi\": \"POSTMANLIPEANDO22\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/detalleorderservice",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"detalleorderservice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrdeneServicio",
+			"item": [
+				{
+					"name": "getOrdeneServicio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ordeneservicio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ordeneservicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postOrdeneServicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cliente\": {\r\n            \"idCliente\": 1\r\n        },\r\n        \"detalleOrdenServicios\": [],\r\n        \"nroRden\": \"222\",\r\n        \"fechaEgress\": \"12/03/22\",\r\n        \"fechaIngress\": \"15/03/22\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ordeneservicio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ordeneservicio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "InformeServicio",
+			"item": [
+				{
+					"name": "GetAllInformes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/informeordenservicio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"informeordenservicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postInformeOrdenServicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cliente\": {\r\n            \"idCliente\": \"2\"\r\n        },\r\n        \"nroRdenConsultaDetalle\": \"5666\",\r\n        \"meServicio\": \"OCTUBRE\",\r\n        \"realizadopor\": \"Armiliano Runper\",\r\n        \"fechaProxMantencion\": \"2024\",\r\n        \"observacioneService\": \"\",\r\n        \"anioServicio\": \"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/informeordenservicio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"informeordenservicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateInforme",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cliente\": {\r\n            \"idCliente\": \"2\"\r\n        },\r\n        \"nroRdenConsultaDetalle\": \"5666\",\r\n        \"meServicio\": \"OCTUBRE\",\r\n        \"realizadopor\": \"Cristian Bueno\",\r\n        \"fechaProxMantencion\": \"2021\",\r\n        \"observacioneService\": \"SALIO MALA LAWEADOS VECES\",\r\n        \"anioServicio\": \"2022\",\r\n        \"idDetalleInforme\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/informeordenservicio/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"informeordenservicio",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteInformeOrdenPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/informeordenservicio/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"informeordenservicio",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListarCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/informeordenservicio/listCliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"informeordenservicio",
+								"listCliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "geToken",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "wqeqwe",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "getUsuarios",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postUsuarios",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "modTallerapp22",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "modTallerapp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"idUsuario\": 4,\r\n        \"nombre\": \"wqeqwe\",\r\n        \"clave\": \"wqe\",\r\n        \"estado\": \"dasdadsa\",\r\n        \"roles\": [\r\n            {\r\n                \"idRol\":\"1\"\r\n            }\r\n        ]\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

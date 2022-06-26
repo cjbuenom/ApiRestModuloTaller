@@ -1,0 +1,26 @@
+{
+   "structureVersion": "1.5.0",
+   "registrationDate": "2022-06-26T03:11:04-04:00",
+   "atom": {
+      "url": "http://localhost:8080/cliente",
+      "verb": "POST",
+      "body": "   {\r\n        \"nombre\": \"NOmbre de pruebas\",\r\n        \"cuenta\": \"111111111111\",\r\n        \"rut\": \"1123456789\",\r\n        \"direccion\": \"123123\",\r\n        \"telefono\": \"123123123\",\r\n        \"email\": \"corre@gmail.com\"\r\n    }",
+      "headers": "{\n   \"Accept\": \"application/json\",\n   \"Content-Type\": \"application/json; charset=utf-8\"\n}",
+      "bodyKind": "json",
+      "withCredentials": false
+   },
+   "scenario": {
+      "code": "$.ajax({\n\turl:'https://maps.googleapis.com/maps/api/geocode/json?address=Meran',\n\tmethod:'GET',\n\tsuccess: function(res){\n\t\tdone(res);\n\t},\n\terror: function(err){\n\t\tdone(err);\n}});\n"
+   },
+   "massive": {
+      "batch": "[\n   {\n      \"verb\": \"GET\",\n      \"url\": \"https://maps.googleapis.com/maps/api/geocode/json?address=Meran\",\n      \"body\": null,\n      \"headers\": null,\n      \"withCredentials\": false\n   },\n   {\n      \"verb\": \"GET\",\n      \"url\": \"https://maps.googleapis.com/maps/api/geocode/json?address=Varese\",\n      \"body\": null,\n      \"headers\": null,\n      \"withCredentials\": false\n   },\n   {\n      \"verb\": \"GET\",\n      \"url\": \"https://maps.googleapis.com/maps/api/geocode/json?address=Chennai\",\n      \"body\": null,\n      \"headers\": null,\n      \"withCredentials\": false\n   }\n]"
+   },
+   "engine": {
+      "name": "PruebasModuloTaller",
+      "iterations": 100,
+      "delay": 100,
+      "warmup": 5,
+      "timeout": 30000,
+      "mode": "atomAdapter"
+   }
+}
